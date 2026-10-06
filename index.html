@@ -1,0 +1,165 @@
+<!-- =========================================================
+STEP 1: Add the required HTML5 skeleton
+========================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tiramisu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <!-- =========================================================
+    STEP 2: Build the “top area” (site name + navigation) using simple HTML
+    ========================================================= -->
+<header class="site-header">
+  <div class="container header-inner">
+  <p class="brand">The Tiramisu<span class="dot"></span></p>
+  <nav id="navigation" class="site-nav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#ingredients">Ingredients</a></li>
+      <li><a href="#featured-content">Recipes</a></li>
+      <li><a href="#matcha">Variations</a></li>
+    </ul>
+  </nav>
+  </div>
+</header>
+    <!-- =========================================================
+    STEP 3: Hero section + “Get Started button” as a link
+    ========================================================= -->
+<main>
+<section id="home" class="hero">
+  <div class="container hero-content">
+  <h1>The Art of Tiramisu</h1>
+  <p>Discover the ingredients, techniques, and flavors behind this classic Italian dessert.</p>
+  <a class="btn btn-dark" href="#featured-content">Get Started</a>
+  </div>
+</section>
+    <!-- =========================================================
+    STEP 4: Features section (3 blocks) + featured content section
+    ========================================================= -->
+    <section class="features">
+      <div class="container features-grid">
+
+<section id="ingredients" class="feature">
+  <img class="icon" src="images/ingredients.png" alt="Ingredient icon representing the ingredients">
+  <h2>Ingredients</h2>
+  <p>The key ingredients that give tiramisu its creamy texture and rich coffee flavor.</p>
+</section>
+
+<section id="recipes" class="feature">
+  <img class="icon" src="images/recipe.png" alt="Recipe icon representing the classic tiramisu recipe">
+  <h2>Classic Recipe</h2>
+  <p>Follow a simple recipe for making traditional tiramisu with coffee-soaked ladyfingers and a creamy mascarpone filling.</p>
+</section>
+
+<section id="variations" class="feature">
+  <img class="icon" src="images/variations.png" alt="Variation icon representing different tiramisu variations">
+  <h2>Tiramisu Variations</h2>
+  <p>Explore different versions of tiramisu, including matcha, raspberry, and other creative flavors.</p>
+</section>
+
+      </div>
+    </section>
+
+<section id="featured-content" class="featured">
+  <div class="container">
+  <h2 class="section-title">How to Make Classic Tiramisu</h2>
+  <p class="section-lede">Classic tiramisu combines coffee-soaked ladyfingers with a creamy mascarpone filling and a layer of cocoa powder. This section shows the basic process of making this classic Italian dessert.</p>
+  
+  <div class="recipe-info">
+    <div class="recipe-block">
+      <h3>Ingredient Lists</h3>
+    <ul>
+     <li>Mascarpone cheese - creamy and rich base for the filling</li>
+      <li>Ladyfingers - light biscuits used to build the layers</li>
+      <li>Espresso - adds a deep coffee flavor to the dessert</li>
+      <li>Eggs - helps create a smooth and creamy filling</li>
+      <li>Sugar - adds sweetness to balance the coffee and cocoa</li>
+      <li>Cocoa powder - adds a slightly bitter finish on top</li>
+    </ul>
+    </div>
+    <div class="recipe-block">
+      <h3>Steps</h3>
+    <ol>
+     <li>Brew the espresso and let it cool before assembling the tiramisu.</li>
+      <li>Prepare the mascarpone cream with eggs and sugar until smooth and creamy.</li>
+      <li>Quickly dip each ladyfinger into the coffee without soaking them too much.</li>
+      <li>Arrange the ladyfingers in a layer and spread the mascarpone cream over them.</li>
+      <li>Repeat the layers until all the ingredients have been used.</li>
+      <li>Chill the tiramisu and finish it with a dusting of cocoa powder before serving.</li>
+    </ol>
+    </div>
+  </div>
+ 
+  <div class="recipe-video">
+  <h3>Recipe Video</h3>
+  <p>Recipe Video: Tiramisu Recipe | How to Make Tiramisu</p>
+  <a href="https://youtu.be/7VTtenyKRg4">
+    Watch the Tiramisu Recipe on YouTube
+  </a>
+  <iframe src="https://www.youtube.com/embed/7VTtenyKRg4?si=0uX0lhkn4HDxgBVp" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  </div> 
+</section> 
+    <!-- =========================================================
+    STEP 5: Two secondary content blocks + CTA section 
+    ========================================================= -->
+    <section class="secondary">
+  <div class="container secondary-grid">
+  
+<section id="matcha" class="card">
+  <div class="card-text">
+  <h3>Matcha Tiramisu</h3>
+  <p>Matcha gives tiramisu an earthy flavor and a bright green twist on the classic dessert.</p>
+  </div>
+<div class="card-image img-a"></div>
+</section>
+    
+<section id="raspberry" class="card">
+  <div class="card-text">
+  <h3>Raspberry Tiramisu</h3>
+  <p>Fresh raspberries add a fruity and refreshing flavor to traditional tiramisu.</p>
+</div>
+<div class="card-image img-b"></div>
+</section>
+
+</div>
+    </section>
+
+<section id="cta" class="cta">
+  <div class="container cta-inner">
+  <h2>Ready to Make Tiramisu?</h2>
+  <p>Explore the ingredients and start creating your own version.</p>
+  <a class="btn btn-dark" href="https://www.sandravalvassori.com/easy-tiramisu-recipe/">Start Exploring</a>
+  </div>
+</section>
+
+</main>
+    <!-- =========================================================
+    STEP 6: Footer 
+    ========================================================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+  <div class="footer-left">
+<p>© 2026 The Tiramisu Qinyi Zheng</p>
+<a href="#navigation">Back to Top</a>
+  </div>
+  <div class="footer-cols">
+      <div class="footer-col">
+        <a href="#home">Home</a>
+        <a href="#ingredients">Ingredients</a>
+        <a href="#featured-content">Recipes</a>
+        <a href="#matcha">Variations</a>
+      </div>
+  </div>
+</footer>
+  </body>
+</html>

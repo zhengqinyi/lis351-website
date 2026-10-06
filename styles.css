@@ -1,0 +1,357 @@
+/* a4stylesheet.css
+   A4: Intro CSS Fill-in Template
+   Instructions: rename this file to styles.css and complete each TODO block.
+*/
+
+
+
+
+
+/* ===== Base styles (mostly done) ===== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #4A3428;
+  background: #fff;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4{font-family: "Cormorant Garamond", Georgia, serif;}
+
+/* ===== Header ===== */
+.site-header {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: 700;
+  margin:0;
+}
+
+.brand .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #B7A58A;
+  border-radius: 50%;
+  margin-left: 6px;
+}
+
+.site-nav a {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #444;
+}
+
+.site-nav ul {
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+
+/* ===== Hero ===== */
+.hero {
+  background-image:
+  linear-gradient(rgba(255,255,255,0.45),rgba(255,255,255,0.45)),
+  url("images/tiramisu-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 360px;
+}
+
+.hero-content {
+  text-align: center;padding: 90px 20px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #4a3428;
+  letter-spacing: 0.03em;
+}
+
+.hero p {
+  margin: 14px auto 22px;
+  font-size: 22px;
+  color: #4a3428;
+  max-width: 700px;
+}
+
+
+
+
+
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.btn-dark {
+ background: #4a3428; color: #fff;
+}
+
+.btn-outline {
+  border: 2px solid #B7A58A;
+  color: #4a3428;
+  background: transparent;
+}
+
+/* ===== Features (3 columns) ===== */
+.features {
+  padding: 42px 0;
+}
+
+.features-grid {
+  display: flex;
+  gap: 26px;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  border: 2px solid #ddd;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 12px;
+  color: #666;
+  font-size: 22px;
+}
+
+/* ===== Featured content ===== */
+.featured {
+  padding: 42px 0 36px;
+  background: #f7f7f7;
+}
+
+.section-title {
+  text-align: center;
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4A3428;
+}
+
+.section-lede {
+  text-align: center;
+  max-width: 720px;
+  margin: 12px auto 28px;
+  color: #4A3428;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.media {
+  background: #eaeaea;
+  border: 1px solid #ddd;
+  height: 260px;
+  display: grid;
+  place-items: center;
+}
+
+.recipe-info {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.recipe-block {
+  flex: 1;
+  max-width: 480px;
+  text-align: center;
+}
+
+.recipe-block ul,
+.recipe-block ol {
+  display: inline-block;
+  text-align: left;
+  margin-top: 8px;
+}
+
+.recipe-block h3 {
+  margin-bottom: 10px;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #4A3428;
+}
+
+.recipe-block li {
+  margin-bottom: 10px;
+  color: #666;
+  font-size: 16px;
+}
+
+.recipe-video {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.recipe-video h3 {
+  margin-bottom: 10px;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #4A3428;
+}
+
+.recipe-video p {
+  color: #666;
+  font-size: 16px;
+}
+
+.recipe-video a {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #765548;
+  text-decoration: underline;
+}
+
+.recipe-video iframe {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  margin: 0 auto;
+  border: 0;
+}
+
+
+
+/* ===== Secondary content (2 cards) ===== */
+.secondary {
+  padding: 34px 0 44px;
+}
+
+.secondary-grid {
+  display: flex;
+  gap: 26px;
+}
+
+.card {
+  flex: 1;
+  border: 1px solid #eee;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-text {
+  padding: 18px;
+}
+
+.card-text h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.card-text p {
+  margin: 0 0 14px;
+  color: #666;
+  font-size: 15px;
+}
+
+.card-image {
+  min-height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Optional images (already provided) */
+.img-a {
+  background-image: url(images/matcha-tiramisu.jpg);
+}
+.img-b {
+  background-image: url(images/raspberry-tiramisu.jpg);
+}
+
+/* ===== CTA ===== */
+.cta {
+  background: #f7f7f7;
+  padding: 42px 0;
+}
+
+.cta-inner {
+  text-align: center;
+}
+
+
+
+
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  padding: 24px 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer-left {
+  max-width: 360px;
+  color: #666;
+  font-size: 12px;
+}
+
+.footer-left a { color: #3a88a8; }
+
+.footer-cols {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin: 6px 0;
+}
+
